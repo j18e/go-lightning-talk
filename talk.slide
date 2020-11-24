@@ -1,0 +1,102 @@
+Go: the language of the cloud
+
+Jamie Wiebe
+IO
+Github - @j18e
+Slack - @jamie #finn-go
+
+* The dream team
+
+- Rob pike - co-creator of UTF-8
+- Ken Thomson - designed and implemented Unix
+- Robert Griesemer - invented the Sawzall language
+
+* Go, what is it good for?
+
+- Cloud native plumbing (Kubernetes, Docker, Consul, Terraform)
+- Databases (Prometheus, Influxdb)
+- Webapps (Grafana)
+- Command line tools (kubectl)
+- Reverse proxy (Traefik)
+- Slideshows (like this one)
+- Static site generators (Hugo)
+- Typical backend microservices
+
+* My beefs with Java
+
+- Code boilerplate
+- Stacktrace vomit
+- JVM bulk
+
+* Statically typed
+
+.code example.go /FUNC_SUM_START OMIT/,/FUNC_SUM_END OMIT/
+
+* Compilation
+
+It's fast
+
+    ❯ time go build .
+    go build .  0.70s user 0.50s system 182% cpu 0.653 total
+
+* Compilation
+
+Small binaries with dependancies packed in
+
+    ❯ ls -lh
+    total 11808
+    -rwxr-xr-x  1 jamie.wiebe  staff   5.8M Nov 23 12:11 astros-go
+    -rw-r--r--  1 jamie.wiebe  staff   888B Nov 19 11:58 main.go
+    -rw-r--r--  1 jamie.wiebe  staff   102B Nov 18 14:46 people.go
+
+* Compilation
+
+The runtime is in the binary (no GVM)
+
+* Compilation
+
+Running on a different OS/CPU?
+
+    ❯ GOOS=linux GOARCH=386 go build .
+
+* Simplicity
+
+All you need is code
+
+.code example.go
+
+* Performance
+
+.image language-comparison.png 500 _
+
+* Performance - memory consumption
+
+200 line Java app: 250MB
+200 line Go app: 45MB
+
+* Out of the box concurrency
+
+    go doSomeWork()
+
+* Side by side - code
+
+.image sbs-code1.png _ 1000
+
+* Side by side - code
+
+.image sbs-code2.png _ 1000
+
+* Side by side - files
+
+.image sbs-tree.png _ 1000
+
+* Side by side - errors
+
+.image sbs-error.png _ 1000
+
+* Can I write my microservice in Go?
+
+Yes!
+
+.image gopher1.gif 400 _
+
