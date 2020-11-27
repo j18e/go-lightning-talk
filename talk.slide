@@ -2,8 +2,13 @@ Go: the language of the cloud
 
 Jamie Wiebe
 IO
-Github - @j18e
-Slack - @jamie #finn-go
+Github: @j18e
+Slack: @jamie
+Slack group: #finn-go
+
+* How it all started
+
+.image https://imgs.xkcd.com/comics/compiling.png
 
 * The dream team
 
@@ -17,16 +22,14 @@ Slack - @jamie #finn-go
 - Databases (Prometheus, Influxdb)
 - Webapps (Grafana)
 - Command line tools (kubectl)
-- Reverse proxy (Traefik)
 - Slideshows (like this one)
 - Static site generators (Hugo)
-- Typical backend microservices
 
 * My beefs with Java
 
 - Code boilerplate
 - Stacktrace vomit
-- JVM bulk
+- JVM bulk (we use Docker!)
 
 * Statically typed
 
@@ -100,3 +103,8 @@ Yes!
 
 .image gopher1.gif 400 _
 
+* Would you like to know more?
+
+- tour.golang.org
+- gobyexample.com
+- The Go Programming Language (book)
